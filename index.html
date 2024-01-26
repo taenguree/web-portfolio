@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ty&#39; Portfolio</title>
+    <meta name="description" content="Portfolio for Ty" />
+    <meta name="author" content="Ty" />
+    <link rel="shortcut icon" href="images/favicon.ico?v=6" type="image/x-icon">
+    <!-- (OG) Open graph data : SNS 에 웹사이트 공유할 때, 텍스트나 이미지 표시하는 거-->
+    <meta property="og:title" content="Ty portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://taenguree.github.io/web-portfolio">
+    <meta property="og:image" content="https://taenguree.github.io/web-portfolio/images/og.webp">
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font awesome (Icon) -->
+    <script src="https://kit.fontawesome.com/92c1f5b430.js" crossorigin="anonymous" defer></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+    <!-- Java script -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__image" src="images/favicon.ico" alt="logo">
+            <h1 class="header__logo__image"><a href="#">Ty</a></h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__menu__item active" href="#home">Home</a></li>
+                <li><a class="header__menu__item" href="#about">About</a></li>
+                <li><a class="header__menu__item" href="#skills">Skils</a></li>
+                <li><a class="header__menu__item" href="#work">My work</a></li>
+                <li><a class="header__menu__item" href="#testimonial">Testimonial</a></li>
+                <li><a class="header__menu__item" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="header__toggle" aria-label="navigation menu toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <div class="home__container">
+                <img class="home__avatar" src="images/portfolio.png" alt="Ty's profile">
+                <h2 class="home__title" aria-label="Hello, I'm Thinking Developer Ty Jeon.">
+                    Hello <br />I&#39;m
+                    <strong class="home__title--strong">Developer</strong> , Ty Jeon.
+                </h2>
+                <p class="home__description">I'm learning Front-End developing</p>
+                <a class="home__contact" href="#contact">Contact me</a>
+            </div>
+        </section>
+        <section id="about" class="section max_container">
+            <h2 class="title">About me</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima consequatur?
+                Error reprehenderit
+                harum architecto blanditiis laborum odio, necessitatibus, impedit tempora, quod nulla nostrum
+                consequatur magnam. Sint tenetur dolores veniam.</p>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-brands fa-html5 major__icon"></i>
+                    <p class="major__title">Front-End</p>
+                    <p>Html, CSS, JavaScript, TypeScript, React, WebAPIs</p>
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-mobile major__icon"></i>
+                    <p class="major__title">Mobile</p>
+                    <p>Android, iOS, React Native, Flutter, Java, Swift, Kotlin</p>
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-server major__icon"></i>
+                    <p class="major__title">Back-End</p>
+                    <p>NodeJs, Java, JavaScript, Go, Rest APIs, GraphQL</p>
+                </li>
+            </ul>
+            <ul class="jobs">
+                <li class="job">
+                    <img src="images/jobs/google.png" alt="">
+                    <div>
+                        <p class="job_name">Google as Senior Software Engineer</p>
+                        <p class="job_period">2019 Oct - Unitil now</p>
+                    </div>
+                </li>
+                <li class="job">
+                    <img src="images/jobs/samsung.png" alt="">
+                    <div>
+                        <p class="job_name">Samsung Senior Software Engineer</p>
+                        <p class="job_period">2014 Sept - 2019 Oct</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="skills" class="section">
+            <div class="max_container">
+                <h2 class="title">My Skills</h2>
+                <p class="description">Skills & Attributes</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio similique eos nisi ex voluptatibus
+                    corporis illum iste veritatis unde magnam eaque quae modi numquam, maiores ullam necessitatibus
+                    doloribus fugit omnis!</p>
+                <div class="skills">
+                    <section class="skills__coding">
+                        <h3 class="skills__title">Coding Skills</h3>
+                        <ul>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>HTML</span><span>98%</span></div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 98%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>CSS</span><span>90%</span></div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 90%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>JavaScript</span><span>90%</span></div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 90%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>TypeScript</span><span>79%</span></div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 79%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>React</span><span>98%</span></div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 98%"></div>
+                                </div>
+                            </li>
+                            <li class="bar">
+                                <div class="bar__metadata"><span>NodeJS</span><span>68%</span></div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 68%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skills__tools">
+                        <h3 class="skills__title">Tools</h3>
+                        <ul>
+                            <li>IntelliJ</li>
+                            <li>X-Code</li>
+                            <li>VSCode</li>
+                        </ul>
+                    </section>
+                    <section class="skills__etc">
+                        <h3 class="skills__title">Etc</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>Scrum Master</li>
+                            <li>Math</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section id="work" class="section">
+            <div class="max_container">
+                <h2 class="title">My work</h2>
+                <p class="description">Projects</p>
+                <ul class="categories">
+                    <li>
+                        <button class="category category--selected" data-category="all">
+                            All <span class="category__count">8</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category" data-category="front-end">Front-End <span
+                                class="category__count">3</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category" data-category="back-end">
+                            Back-End <span class="category__count">3</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category" data-category="mobile">
+                            Moblie <span class="category__count">2</span>
+                        </button>
+                    </li>
+                </ul>
+                <ul class="projects">
+                    <li class="project" data-type="front-end">
+                        <a href="#" target="_blank">
+                            <img src="images/projects/project1.webp" alt="project1" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project #1</h3>
+                                <p>Clone Coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="front-end">
+                        <a href="#" target="_blank">
+                            <img src="images/projects/project2.webp" alt="project2" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project #2</h3>
+                                <p>Clone Coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="back-end">
+                        <a href="#" target="_blank">
+                            <img src="images/projects/project3.webp" alt="project3" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project #3</h3>
+                                <p>Clone Coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="mobile">
+                        <a href="#" target="_blank">
+                            <img src="images/projects/project4.webp" alt="project4" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project #4</h3>
+                                <p>Clone Coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="front-end">
+                        <a href="#" target="_blank">
+                            <img src="images/projects/project5.webp" alt="project5" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project #5</h3>
+                                <p>Clone Coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="back-end">
+                        <a href="#" target="_blank">
+                            <img src="images/projects/project6.webp" alt="project6" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project #6</h3>
+                                <p>Clone Coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="mobile">
+                        <a href="#" target="_blank">
+                            <img src="images/projects/project7.webp" alt="project7" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project #7</h3>
+                                <p>Clone Coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project" data-type="back-end">
+                        <a href="#" target="_blank">
+                            <img src="images/projects/project8.webp" alt="project8" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project #8</h3>
+                                <p>Clone Coding with HTML, CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="testimonial" class="section max_container">
+            <h2 class="title">Testimonial</h2>
+            <p class="description">See what they say about me</p>
+            <ul class="testimonials">
+                <li class="testimonial">
+                    <img src="images/testimonials/people1.webp" alt="people1" class="testimonial__img">
+                    <div class="testimonial__bubble">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti esse iure veniam placeat,
+                            quod veritatis illo error explicabo molestiae repellendus, qui dolor et ea, inventore
+                            impedit sapiente magni adipisci recusandae.
+                        </p>
+                        <p><a href="#" class="testimonial__bubble__name">James Kim</a> /Google</p>
+                    </div>
+                </li>
+                <li class="testimonial">
+                    <img src="images/testimonials/people2.webp" alt="people2" class="testimonial__img">
+                    <div class="testimonial__bubble">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti esse iure veniam placeat,
+                            quod veritatis illo error explicabo molestiae repellendus, qui dolor et ea, inventore
+                            impedit sapiente magni adipisci recusandae.
+                        </p>
+                        <p><a href="#" class="testimonial__bubble__name">Anna Jin</a> /Samsung</p>
+                    </div>
+                </li>
+                <li class="testimonial">
+                    <img src="images/testimonials/people3.webp" alt="people3" class="testimonial__img">
+                    <div class="testimonial__bubble">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti esse iure veniam placeat,
+                            quod veritatis illo error explicabo molestiae repellendus, qui dolor et ea, inventore
+                            impedit sapiente magni adipisci recusandae.
+                        </p>
+                        <p><a href="#" class="testimonial__bubble__name">Anna Jin</a> /Samsung</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <aside>
+            <a class="arrow-up" href="#home" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        </aside>
+    </main>
+
+    <footer id="contact" class="section">
+        <div class="max_container">
+            <h2 class="title">Let&#39;s Code</h2>
+            <p class="description">email@gmail.com</p>
+            <ul class="contact__links">
+                <li><a class="contact__link" href="https:github.com/taenguree" title="my gitbug link" target="_black"><i
+                            class="fa-brands fa-github"></i></a></li>
+                <li><a class="contact__link" href="https:github.com/taenguree" title="my linkin link" target="_black"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <p>©Ty - All rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
